@@ -3,7 +3,12 @@ const router = express.Router();
 
 // rota exemplo com os nomes dos integrantes do grupo
 router.get('/nomes', (req, res) => {
-  const nomes = ["Guilherme", "Olavo", "Marina", "Alexandre", "Jilliard"];
+  const nomes = ["Guilherme", "Olavo", "Marina", "Alexandre", "Jiliard"];
+  res.json(nomes);
+});
+
+router.get('/perfil', (req, res) => {
+  const nomes = ["Guilherme", "Olavo", "Marina", "Alexandre", "Jiliard"];
   res.json(nomes);
 });
 
